@@ -3,8 +3,8 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Responsive Layouts</title>
-  <meta name="description" content="This site will serve as the hub for many sub responsive layouts">
+  <title>King Cakes</title>
+  <meta name="description" content="This site will display all King Cake products and collect orders.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <meta property="og:title" content="">
@@ -13,18 +13,41 @@
   <meta property="og:image" content="">
 
   <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="icon" type="image/png" href="./img/kc-icon.png">
   <!-- Place favicon.ico in the root directory -->
 
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/main.css">
 
   <meta name="theme-color" content="#fafafa">
+  <!--fonts go here-->
 </head>
 
 <body>
   <!-- Place your site's HTML here -->
-  <p>This text will display on your site! Jan 19</p>
+   <header>
+
+   </header>
+   <main>
+    <p>This text will display on your site! Jan 19</p>
+    <img src="./img/kc-icon.png" alt="">
+    <div class="contact-form">
+      <form action="/submit_form" method="post">
+       <label for="name">Name:</label>
+       <input type="text" id="name" name="name" required placeholder="First Last"><br><br>
+       <label for="phone number">Phone Number:</label>
+       <input type="phone number" id:"phone number" name="phone number" required placeholder="(###) ###-####"><br><br>
+       <label for="email">Email:</label>
+       <input type="email" id="email" name="email" required placeholder="example@email.com"><br><br>
+       <!--add dropdown menu here-->
+       <input type="submit" value="Submit">
+      </form>
+    </div>
+   </main>
+   <footer>
+    <span>Meet me at midnight...</span>
+   </footer>
+
   <script src="js/main.js"></script>
 </body>
 

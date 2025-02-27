@@ -1,1 +1,32 @@
 /* Place CSS styles here */
+*{
+    box-sizing: border-box;
+}
+html{
+
+}
+body{
+
+}
+h1{
+
+}
+h2{
+
+}
+h3{
+
+}
+header{
+
+}
+main{
+    
+}
+footer {
+    background-color: #525f86;
+    color: #e9e8e4;
+    padding: 20px;
+    text-align: center;
+    font-weight: 400;
+}
