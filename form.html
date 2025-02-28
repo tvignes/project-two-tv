@@ -1,0 +1,69 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>King Cakes</title>
+  <meta name="description" content="This site will display all King Cake products and collect orders.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="icon" type="image/png" href="./img/kc-icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+  <!--fonts go here-->
+</head>
+
+<body>
+  <!-- Place your site's HTML here -->
+    <header>
+
+   </header>
+   <main>
+        <div class="order-form">
+            <form action="/submit_form" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required placeholder="First Last"><br><br>
+            <label for="phone number">Phone Number:</label>
+            <input type="number" id="phone-number" name="phone number" required placeholder="(###) ###-####"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="example@email.com"><br><br>
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" required placeholder="#"><br><br>
+            <label for="pickup-date">Pickup Date:</label>
+            <input type="date" id="pickup-date" name="pickup-date" required placeholder="MM/DD/YYYY"><br><br>
+            <label for="pickup-time">Pickup Time:</label>
+            <input type="time" id="pickup-time" name="pickup-time" required placeholder="--:-- --"><br><br>
+            <label for="size-select">Size:</label>
+            <select name="size" id="size-select">
+                <option value="">-Please choose a size-</option>
+                <option value="cupcake">Cupcake</option>
+                <option value="small">Small</option>
+                <option value="large">Large</option>
+            </select><br><br>
+            <label for="flavor-select">Choose a Flavor:</label>
+            <select name="flavor" id="flavor-select">
+                <option value="">-Please choose a flavor-</option>
+                <option value="cinnamon">Cinnamon</option>
+                <option value="cream-cheese">Cream Cheese</option>
+                <option value="bavarian-cream">Bavarian Cream</option>
+                <option value="chocolate">Chocolate</option>
+                <option value="strawberry-cream-cheese">Strawberry Cream Chese</option>
+                <option value="blueberry-cream-cheese">Blueberry Cream Cheese</option>
+            </select><br><br>
+            <input type="submit" value="Place Order">
+            </form>
+        </div>
+   </main>
+	 <footer>
+		<span>Eat King Cakes</span>
+	</footer>
