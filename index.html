@@ -3,8 +3,8 @@
 
 <head>
   <meta charset="utf-8">
-  <title>King Cakes</title>
-  <meta name="description" content="This site will display all King Cake products and collect orders.">
+  <title>Baby's Best King Cakes</title>
+  <meta name="description" content="This site will display all of Baby's Best King Cake's products and information, it will and collect orders.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <meta property="og:title" content="">
@@ -20,42 +20,82 @@
   <link rel="stylesheet" href="./css/main.css">
 
   <meta name="theme-color" content="#fafafa">
-  <!--fonts go here-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">	
 </head>
 
 <body>
   <!-- Place your site's HTML here -->
 	<header>
-		<div>
+		<div class="store">
 			<img class="logo" src="./img/kc-icon.png" alt="">
 			<h1>Baby's Best King Cakes</h1>
 		</div>
 		<button class="menu-toggle" aria-expanded="false" aria-controls="offcanvas-menu">Menu</button>
 		<nav id="offcanvas-menu" class="menu">
-			<a href="./index.html">Home</a>
 			<a href="#about">About</a>
 			<a href="#visit">Visit Us</a>
 			<a href="#contact">Contact Us</a>
-			<a href="#menu">Menu</a>
+			<a href="#flavor-menu">Menu</a>
 			<a href="./form.html">Order Now</a>
 		</nav>
 	</header>
-	<main>
-		<div class="hero">
+	<section class="hero">
 			<!-- this div is empty and only exists for the background image to exist -->
-		<p>The Best of Baton Rouge</p>
-	</div>
+			<div class="hero-text">
+				<p>The Best of Baton Rouge</p>
+				<p><a href="#flavor-menu">See our flavors!</a></p>
+			</div>
+		</section>
+	<main>
 	<section class="featured-items">
-		<p>Whole King Cakes</p>
-		<img src="./img/king-cake-whole.jpeg" alt="">
-		<p>King Cake Cupcakes</p>
-		<img src="./img/king-cake-cupcake.jpeg" alt="">
+		<div class="featured-item">
+			<p>Whole King Cakes</p>
+			<img src="./img/king-cake-whole.jpeg" alt="">
+		</div>
+		<div class="featured-item">
+			<p>King Cake Cupcakes</p>
+			<img src="./img/king-cake-cupcake.jpeg" alt="">
+		</div>
+	</section>
+	<div class="about" id="about">
+		<h2>About Us</h2>
+		<p>Baby's Best King Cakes is a locally owned bakery in Baton Rouge Louisiana. We started off as a Mardi Gras-loving family making king cakes in the kitchen, and in 2024 we were able to open our storefront. Our number one priority is making sure you have access to Louisiana's favorite cake all year round.</p>
+	</div>
+		<section class="flavor-menu" id="flavor-menu">
+		<h2>Six Delicious Flavors</h2>
+		<article class="flavors">
+			<div class="flavor">
+				<img src="./img/cinnamon.jpg" alt="">
+				<p>Traditional Cinnamon</p>
+			</div>
+			<div class="flavor">
+				<img src="./img/cream-cheese.jpg" alt="">
+				<p>Cream Cheese</p>
+			</div>
+			<div class="flavor">
+				<img src="./img/bavarian-cream.jpeg" alt="">
+				<p>Bavarian Cream</p>
+			</div>
+			<div class="flavor">
+				<img src="./img/pecan-praline.jpeg" alt="">
+				<p>Pecan Praline</p>
+			</div>
+			<div class="flavor">
+				<img src="./img/strawberry-cream-cheese.jpg" alt="">
+				<p>Strawberry Cream Cheese</p>
+			</div>
+			<div class="flavor">
+				<img src="./img/blueberry-cream-cheese.jpg" alt="">
+				<p>Blueberry Cream Cheese</p>
+			</div>	
+		</article>
+		<div class="open-order-form">
+			<p><a href="./form.html">Place your order now!</a></p>
+		</div>
 	</section>
 	<section class="info">
-		<article id="about">
-			<h2>About Us</h2>
-			<p>Baby's Best King Cakes is a locally owned bakery in Baton Rouge Louisiana. We started off as a Mardi Gras-loving family making king cakes in the kitchen, and in 2024 we were able to open our storefront. Our number one priority is making sure you have access to Louisiana's favorite cake all year round.</p>
-		</article>
 		<article id="visit">
 			<h2>Visit Us</h2>
 			<h3>Location</h3>
@@ -77,24 +117,6 @@
 			<p><a href="mailto:babysbestkingcakes@email.com">babysbestkingcakes@email.com</a></p>
 		</article>
 	</section>
-	<section class="flavors">
-		<h2>Six Delicious Flavors</h2>
-		<img src="" alt="">
-		<p>Traditional Cinnamon</p>
-		<img src="" alt="">
-		<p>Cream Cheese</p>
-		<img src="" alt="">
-		<p>Bavarian Cream</p>
-		<img src="" alt="">
-		<p>Chocolate</p>
-		<img src="" alt="">
-		<p>Strawberry Cream Cheese</p>
-		<img src="" alt="">
-		<p>Blueberry Cream Cheese</p>
-	</section>
-	<div class="open-order-form">
-		<p><a href="./form.html">Place your order now!</a></p>
-	</div>
 	</main>
 	<footer>
 		<span>Baby's Best King Cakes</span>

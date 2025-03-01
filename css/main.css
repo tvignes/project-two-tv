@@ -7,23 +7,60 @@ html{
     scroll-behavior: smooth;
 }
 body{
-
+  color:#1b1b1b;
+  font-size: 14px;
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
 }
 h1{
-
+  color:#9131b0;
+  font-size: 20px;
+  font-family: "Fredoka", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
 }
 h2{
-
+  color:#9131b0;
+  font-size: 18px;
+  font-family: "Fredoka", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
 }
 h3{
-
+  color:#1b1b1b;
+  font-size: 14px;
+  font-family: "Fredoka", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+ul{
+  list-style: none;
 }
 header{
-    box-shadow: 0 30px 40px #9131b0;
+  padding: 4px;
+  display: flex;
+  justify-content:space-between;
+}
+.store{
+  display:flex;
+  gap: 4px;
 }
 
 .logo {
-    width: 90px;
+    width: 60px;
 }
 
 /*NAV*/
@@ -34,21 +71,20 @@ header{
 
   .menu {
     position: fixed; /* Fixed position for overlay effect */
-    top: 164px;
+    top: 60px;
     right: 0;
     height: 100%;
-    width: 250px; /* Adjust width as needed */
-    background-color: #9131b0;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+    width: 150px; /* Adjust width as needed */
+    background-color: #fff;
+    box-shadow: 0px 0px 5px #1b1b1b; /* Add a subtle shadow */
     transform: translateX(100%); /* Initially slide out to the left */
     transition: transform 0.3s ease; /* Smooth transition */
   }
 
-  @media (max-width: 768px) {
-    .menu {
-			flex-direction: column;
-			padding: 20px;
-		}
+
+  .menu {
+		flex-direction: column;
+		padding: 20px;
 	}
 
   .menu.expanded {
@@ -73,34 +109,109 @@ header{
   .menu-toggle {
       display: none; /* Hide the toggle button on larger screens */
     }
-
+}
 /*MAIN*/
 
 main{
-    
+  margin: 20px 30px;
+  text-align: center;
+}
+main a{
+  color:#1b1b1b
 }
 .hero{
-    background-image: url(../img/cake-baby.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 400px;
-    margin: 0px;
-     color:#ffff;
-    text-shadow: 0px 0px 20px #1d0b2b;
-    display:flex;
-    align-items: center;
-    justify-content: center;
+  background-image: url(../img/cake-baby.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  margin: 0px;
+}
+.hero-text{
+  color:#fff;
+  font-size: 32px;
+  font-family: "Fredoka", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+  text-shadow: 0px 0px 32px #1b1b1b;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 0px;
+}
+.hero-text a{
+  font-size: 20px;
+  color:#fff;
+  background-color: #9131b0;
+  padding:12px;
+  border-radius:24px;
+  box-shadow: 0px 0px 20px #1b1b1b;
 }
 
+.featured-items{
+	display:flex;
+	justify-content:space-around;
+}
+.featured-item{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	text-align:center;
+}
+.featured-items img{
+  max-width: 150px;
+}
+@media (min-width: 768px) {
+ .featured-items img{
+    max-width: 250px;
+ }
+}
+
+.flavors{
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  justify-content: space-around;
+}
+.flavor img{
+  max-width: 140px;
+  box-shadow: 0px 0px 12px #1b1b1b;
+}
+@media (min-width: 768px) {
+  .flavor img{
+    max-width: 250px;
+  }
+}
+
+.flavor{
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+}
 
 /*FOOTER*/
 
 footer {
-    background-color: #9131b0;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-    font-weight: 400;
+  background-color: #9131b0;
+  color: #fff;
+  font-size: 14px;
+  font-family: "Fredoka", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+  padding: 15px;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  footer{
+    font-size: 18px;
+    padding:20px;
+  }
 }
 
 /* ORDER FORM */
