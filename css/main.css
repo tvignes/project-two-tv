@@ -19,12 +19,14 @@ h3{
 
 }
 header{
-
+    box-shadow: 0 30px 40px #9131b0;
 }
 
 .logo {
     width: 90px;
 }
+
+/*NAV*/
 
 .offcanvas-nav {
     position: relative; /* To position the menu within */
@@ -72,9 +74,27 @@ header{
       display: none; /* Hide the toggle button on larger screens */
     }
 
+/*MAIN*/
+
 main{
     
 }
+.hero{
+    background-image: url(../img/cake-baby.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    margin: 0px;
+     color:#ffff;
+    text-shadow: 0px 0px 20px #1d0b2b;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*FOOTER*/
+
 footer {
     background-color: #9131b0;
     color: #fff;
