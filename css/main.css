@@ -15,6 +15,8 @@ body{
   font-style: normal;
   font-variation-settings:
     "wdth" 100;
+  flex:1;
+  min-height: 100vh;
 }
 h1{
   color:#9131b0;
@@ -337,6 +339,8 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.fields{
   text-align: left;
 }
 label{
@@ -377,7 +381,8 @@ input[type=submit]{
 
 /* THANK YOU PAGE */
 
-thank-you footer{
-position:fixed;
-bottom:0px;
+thank-you body{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
