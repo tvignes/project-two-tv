@@ -7,3 +7,7 @@ menuToggle.addEventListener('click', () => {
   menuToggle.setAttribute('aria-expanded',!expanded);
   menu.classList.toggle('expanded');
 });
+
+function myFunction(x) {
+  x.classList.toggle("change");
+}
