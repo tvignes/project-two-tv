@@ -379,10 +379,13 @@ input[type=submit]{
   text-align: center;
 }
 
-/* THANK YOU PAGE */
+/* FOOTERS AT BOTTOM */
 
-thank-you body{
+.full-length{
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+}
+.full-length main{
+  flex: 1;
 }
